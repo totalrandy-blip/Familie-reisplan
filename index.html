@@ -86,7 +86,8 @@ input:disabled,textarea:disabled{opacity:.7}
 .day-date .d{font-family:var(--display);font-size:22px;font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums}
 .day-date .w{font-size:14px;color:var(--muted);font-weight:600}
 .day-fields{display:flex;flex-direction:column;gap:12px;min-width:0}
-.day-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,220px);gap:10px}
+.day-top{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.stay{font-size:15px;font-weight:600;color:var(--ink);overflow-wrap:anywhere}
 .field{display:flex;flex-direction:column;gap:3px;min-width:0}
 .field .stamp{padding-left:12px}
 .day-title{font-family:var(--display);font-weight:800;font-size:19px;padding:7px 12px}
@@ -157,6 +158,7 @@ dialog .row{display:flex;gap:10px;justify-content:flex-end}
       </div>
       <h1 id="tTitle">Waar gaan we heen?</h1>
       <span class="route" id="tRoute">Even laden…</span>
+      <span class="stay" id="tStay" hidden></span>
       <span class="stamp" id="tripStamp"></span>
       <div class="ticket-actions">
         <a class="btn" id="mapsLink" href="#" target="_blank" rel="noopener" hidden>Onze plekken in Google Maps</a>
@@ -174,6 +176,7 @@ dialog .row{display:flex;gap:10px;justify-content:flex-end}
     <label for="fDest">Bestemming<input id="fDest" maxlength="80" placeholder="Bijvoorbeeld Japan"></label>
     <label for="fStart">Vertrek<input id="fStart" type="date"></label>
     <label for="fEnd">Terug<input id="fEnd" type="date"></label>
+    <label for="fStay" style="grid-column:1/-1">Ons verblijf (hotel of adres, mag leeg blijven)<input id="fStay" maxlength="160" placeholder="Bijvoorbeeld: Hotel XYZ, Tsim Sha Tsui"></label>
     <label for="fMaps" style="grid-column:1/-1">Link naar Google Maps-lijst (mag leeg blijven)<input id="fMaps" type="url" maxlength="600" placeholder="https://www.google.com/maps/..."></label>
     <div class="full">
       <span class="hint">Iedereen met deze link ziet en bewerkt hetzelfde plan.</span>
