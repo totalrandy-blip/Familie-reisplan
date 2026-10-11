@@ -1,0 +1,378 @@
+{
+ "trip": {
+  "title": "Hong Kong 2026",
+  "dest": "Hong Kong",
+  "start": "2026-10-16",
+  "end": "2026-10-23",
+  "mapsUrl": "https://www.google.com/maps/@22.2864787,114.1357277,13.61z/data=!4m2!11m1!2sz1lNYL-EfH6B2EDxGOr-sXP_MQfw0A?entry=ttu&g_ep=EgoyMDI2MTAwNC4wIKXMDSoASAFQAw%3D%3D",
+  "meta": {
+   "at": 1791410632000,
+   "by": "Randy"
+  }
+ },
+ "days": {
+  "2026-10-16": {
+   "title": "Vertrek",
+   "stay": "In het vliegtuig",
+   "items": {
+    "a1": {
+     "order": 0,
+     "time": "",
+     "text": "Chillen",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "a2": {
+     "order": 1,
+     "time": "",
+     "text": "Vliegen",
+     "at": 1791410632000,
+     "by": "Randy"
+    }
+   },
+   "meta": {
+    "title": {
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "stay": {
+     "at": 1791410632000,
+     "by": "Randy"
+    }
+   }
+  },
+  "2026-10-17": {
+   "title": "Aankomst & Tsim Sha Tsui",
+   "stay": "",
+   "items": {
+    "b1": {
+     "order": 0,
+     "time": "",
+     "text": "Aankomst, Airport Express naar de stad, inchecken en even bijkomen",
+     "at": 1791439801746,
+     "by": "Randy"
+    },
+    "b5": {
+     "order": 1,
+     "time": "",
+     "text": "Octopus-kaart halen op het vliegveld, of in de MTR inchecken met ieders eigen bankpas of telefoon",
+     "at": 1791439801746,
+     "by": "Randy"
+    },
+    "b3": {
+     "order": 2,
+     "time": "19:45",
+     "text": "Symphony of Lights om 20:00 (gratis, 13 minuten), op tijd komen voor een goed plekje",
+     "at": 1791439801746,
+     "by": "Randy"
+    },
+    "b4": {
+     "order": 3,
+     "time": "",
+     "text": "Vroeg naar bed tegen de jetlag",
+     "at": 1791439801746,
+     "by": "Randy"
+    }
+   },
+   "meta": {
+    "title": {
+     "at": 1791439801746,
+     "by": "Randy"
+    }
+   }
+  },
+  "2026-10-18": {
+   "title": "Hong Kong Island & The Peak",
+   "stay": "",
+   "items": {
+    "c1": {
+     "order": 0,
+     "time": "09:00",
+     "text": "Star Ferry van Tsim Sha Tsui naar Central (10 minuten)",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "c2": {
+     "order": 1,
+     "time": "09:45",
+     "text": "Peak Tram naar The Peak, tickets vooraf kopen (op zondag druk). Bij helder weer de Peak Circle Walk (ongeveer 1 uur)",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "c6": {
+     "order": 2,
+     "time": "",
+     "text": "Naar beneden lopen via de Mid-Levels naar de Zoological and Botanical Gardens: gratis, met apen en een speeltuin",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "c3": {
+     "order": 3,
+     "time": "",
+     "text": "Lunch: dim sum (yum cha) in Central",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "c4": {
+     "order": 4,
+     "time": "14:30",
+     "text": "Man Mo Temple, de Mid-Levels Escalator en Tai Kwun",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "c5": {
+     "order": 5,
+     "time": "",
+     "text": "Ritje met de dubbeldekker-tram (\"Ding Ding\") door Wan Chai en Causeway Bay",
+     "at": 1791410632000,
+     "by": "Randy"
+    }
+   },
+   "meta": {
+    "title": {
+     "at": 1791410632000,
+     "by": "Randy"
+    }
+   }
+  },
+  "2026-10-19": {
+   "title": "Lantau: Big Buddha & Tai O",
+   "stay": "",
+   "items": {
+    "d1": {
+     "order": 0,
+     "time": "09:00",
+     "text": "Ngong Ping 360-kabelbaan vanaf Tung Chung: vroeg gaan en tickets vooraf online, anders kan de rij lang zijn",
+     "at": 1791439850842,
+     "by": "Randy"
+    },
+    "d2": {
+     "order": 1,
+     "time": "",
+     "text": "Big Buddha (268 treden) en het Po Lin-klooster, lunch in Ngong Ping",
+     "at": 1791439850842,
+     "by": "Randy"
+    }
+   },
+   "meta": {
+    "title": {
+     "at": 1791439850842,
+     "by": "Randy"
+    }
+   }
+  },
+  "2026-10-20": {
+   "title": "Ocean Park",
+   "stay": "",
+   "items": {
+    "e1": {
+     "order": 0,
+     "time": "10:00",
+     "text": "Ocean Park, de hele dag. Bij opening zijn, tickets vooraf online (goedkoper). In oktober is er Halloween Fest",
+     "at": 1791410722151,
+     "by": "Randy"
+    },
+    "e2": {
+     "order": 1,
+     "time": "",
+     "text": "Tip: begin met de kabelbaan naar het Summit-gedeelte (achtbanen, veel attracties vanaf 132 cm), daarna panda's en het aquarium",
+     "at": 1791410722151,
+     "by": "Randy"
+    }
+   },
+   "meta": {
+    "title": {
+     "at": 1791410722151,
+     "by": "Randy"
+    }
+   }
+  },
+  "2026-10-21": {
+   "title": "Kowloon & eten met familie",
+   "stay": "",
+   "items": {
+    "f1": {
+     "order": 0,
+     "time": "10:00",
+     "text": "Goldfish Market, Flower Market en Yuen Po Bird Garden in Mong Kok",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "f4": {
+     "order": 1,
+     "time": "",
+     "text": "Hong Kong Museum of History in Tsim Sha Tsui: gratis, met nagebouwde oude winkelstraatjes",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "f2": {
+     "order": 2,
+     "time": "",
+     "text": "Of de middag vrij: shoppen of zwembad bij het hotel",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "f3": {
+     "order": 3,
+     "time": "",
+     "text": "Eten met familie",
+     "at": 1791410632000,
+     "by": "Randy"
+    }
+   },
+   "meta": {
+    "title": {
+     "at": 1791410632000,
+     "by": "Randy"
+    }
+   }
+  },
+  "2026-10-22": {
+   "title": "Dagtrip Shenzhen",
+   "stay": "",
+   "items": {
+    "g1": {
+     "order": 0,
+     "time": "08:30",
+     "text": "East Rail Line naar Lok Ma Chau, over de grens naar Futian (paspoort mee; visumvrij voor Nederlanders tot 31-12-2026)",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "g2": {
+     "order": 1,
+     "time": "",
+     "text": "Lianhuashan Park met uitzicht op de skyline (metrolijn 4, station Children's Palace)",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "g3": {
+     "order": 2,
+     "time": "",
+     "text": "Shenzhen Science & Technology Museum (nieuw, ontworpen door Zaha Hadid)",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "g4": {
+     "order": 3,
+     "time": "",
+     "text": "Lunch in COCO Park, daarna voor zonsondergang terug naar Hong Kong",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "g5": {
+     "order": 4,
+     "time": "",
+     "text": "Vooraf regelen: Alipay gekoppeld aan je bankpas, eSIM met China-dekking, vertaal-app",
+     "at": 1791410632000,
+     "by": "Randy"
+    }
+   },
+   "meta": {
+    "title": {
+     "at": 1791410632000,
+     "by": "Randy"
+    }
+   }
+  },
+  "2026-10-23": {
+   "title": "Laatste dag & vertrek",
+   "stay": "",
+   "items": {
+    "h1": {
+     "order": 0,
+     "time": "",
+     "text": "Inpakken en uitchecken; bagage kan vaak al in de stad worden ingecheckt bij het Airport Express-station",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "h2": {
+     "order": 1,
+     "time": "",
+     "text": "Laatste dim sum en souvenirs",
+     "at": 1791410632000,
+     "by": "Randy"
+    },
+    "h3": {
+     "order": 2,
+     "time": "",
+     "text": "Airport Express naar het vliegveld",
+     "at": 1791410632000,
+     "by": "Randy"
+    }
+   },
+   "meta": {
+    "title": {
+     "at": 1791410632000,
+     "by": "Randy"
+    }
+   }
+  }
+ },
+ "ideas": {
+  "v-disney": {
+   "title": "Hong Kong Disneyland",
+   "note": "Halloween Time loopt tot 1 november; past in plaats van Lantau of de markten",
+   "by": "",
+   "order": 1,
+   "votes": {
+    "legacy-randy": "Randy"
+   }
+  },
+  "v-dragon": {
+   "title": "Wandeling Dragon's Back",
+   "note": "Makkelijke wandeling met zeezicht, eindigt bij het strand van Shek O",
+   "by": "",
+   "order": 4,
+   "votes": {}
+  },
+  "v-lamma": {
+   "title": "Lamma Island",
+   "note": "20 minuten met de ferry vanaf Central, autovrij eiland met een wandeling van 1,5 uur en vis eten",
+   "by": "",
+   "order": 7,
+   "votes": {}
+  },
+  "v-macau": {
+   "title": "Dagtrip Macau",
+   "note": "Met de ferry of over de brug: Portugese oude stad en eiertaartjes",
+   "by": "",
+   "order": 2,
+   "votes": {}
+  },
+  "v-maritime": {
+   "title": "Maritime Museum",
+   "note": "Bij de pier in Central; op zondag kun je in een simulator zelf een schip door de haven sturen",
+   "by": "",
+   "order": 6,
+   "votes": {}
+  },
+  "v-monster": {
+   "title": "Monster Building",
+   "note": "Fotospot tussen de woontorens in Quarry Bay, station Tai Koo",
+   "by": "",
+   "order": 8,
+   "votes": {}
+  },
+  "v-saikung": {
+   "title": "Sai Kung: eilandhoppen en strand",
+   "note": "Bootje naar de eilanden van de Geopark, vis eten aan de haven",
+   "by": "",
+   "order": 3,
+   "votes": {}
+  },
+  "v-temple": {
+   "title": "Temple Street Night Market",
+   "note": "Avondmarkt met eetkraampjes",
+   "by": "",
+   "order": 5,
+   "votes": {}
+  },
+  "v-wongtaisin": {
+   "title": "Wong Tai Sin-tempel en Nan Lian Garden",
+   "note": "Kleurrijke tempel en een rustige Chinese tuin vlak bij elkaar",
+   "by": "",
+   "order": 9,
+   "votes": {}
+  }
+ }
+}

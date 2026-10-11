@@ -1,0 +1,11 @@
+rules_version = '2';
+// Anyone who opens the app is signed in anonymously in the background.
+// Only those signed-in visitors can read and write, and only these collections.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /{coll}/{docId} {
+      allow read: if request.auth != null && coll in ['trip', 'days', 'ideas', 'meta'];
+      allow write: if request.auth != null && coll in ['trip', 'days', 'ideas', 'meta'];
+    }
+  }
+}

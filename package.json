@@ -1,0 +1,12 @@
+{
+  "name": "familie-reisplan",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "sh build.sh"
+  },
+  "dependencies": {
+    "esbuild": "^0.28.2",
+    "firebase": "^13.0.0"
+  },
+  "private": true
+}

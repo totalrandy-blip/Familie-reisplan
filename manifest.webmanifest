@@ -1,0 +1,16 @@
+{
+  "name": "Familie Reisplan",
+  "short_name": "Reisplan",
+  "description": "Ons gezamenlijke reisplan: dag voor dag en een wensenlijst.",
+  "lang": "nl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F3F6F5",
+  "theme_color": "#1F6F96",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
