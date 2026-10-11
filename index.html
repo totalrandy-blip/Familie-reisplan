@@ -105,6 +105,20 @@ input:disabled,textarea:disabled{opacity:.7}
 .x.confirm{width:auto;padding:0 8px;font-size:12px;font-weight:700;color:var(--vote);border-color:var(--vote)}
 .add-item{align-self:flex-start;background:none;border:1.5px dashed var(--line);border-radius:10px;padding:7px 14px;color:var(--sea);font-weight:600;cursor:pointer;margin-top:2px}
 .add-item:disabled{opacity:.5;cursor:not-allowed}
+.week{margin-top:22px}
+.week .sec-head{margin-bottom:10px}
+.week-tiles{display:grid;grid-template-columns:repeat(var(--n,8),minmax(0,1fr));gap:8px}
+.tile{font:inherit;color:inherit;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:10px 10px 11px;display:flex;flex-direction:column;gap:4px;min-width:0;cursor:pointer}
+.tile:hover{border-color:var(--sea)}
+.tile.today{border-color:var(--sun);box-shadow:0 0 0 3px var(--sun-soft)}
+.tile .dw{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sea)}
+.tile .dn{font-family:var(--display);font-size:24px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.tile .tt{font-size:13px;font-weight:600;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;min-height:3.9em;overflow-wrap:anywhere}
+.tile .mt{display:flex;align-items:center;gap:4px;font-size:13px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums;margin-top:auto}
+.tile .mt svg{width:14px;height:14px;flex:none}
+.tile .pill{align-self:flex-start;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;background:var(--sun-soft);color:var(--ink)}
+.day{scroll-margin-top:16px}
+@media (max-width:860px){.week-tiles{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:12px;padding-top:4px;padding-bottom:8px;margin:0 -12px;padding-left:12px;padding-right:12px;scrollbar-width:none}.week-tiles::-webkit-scrollbar{display:none}.tile{flex:0 0 112px;scroll-snap-align:start}.week .count{display:none}}
 .empty{background:var(--surface);border:1.5px dashed var(--line);border-radius:16px;padding:28px;text-align:center;color:var(--muted)}
 
 .ideas-card{background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:14px}
@@ -184,6 +198,11 @@ dialog .row{display:flex;gap:10px;justify-content:flex-end}
     </div>
   </form>
   <div class="banner" id="banner" hidden></div>
+
+  <section class="week" id="week" aria-labelledby="hWeek" hidden>
+    <div class="sec-head"><h2 id="hWeek">Weekoverzicht</h2><span class="count">tik op een dag om ernaartoe te springen</span></div>
+    <div class="week-tiles" id="weekTiles"></div>
+  </section>
 
   <div class="cols">
     <section aria-labelledby="hDays">
