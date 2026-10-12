@@ -87,6 +87,15 @@ input:disabled,textarea:disabled{opacity:.7}
 .day-date .w{font-size:14px;color:var(--muted);font-weight:600}
 .day-fields{display:flex;flex-direction:column;gap:12px;min-width:0}
 .day-top{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.maprow{display:flex;align-items:center;gap:6px;color:var(--muted)}
+.maprow > svg{width:16px;height:16px;flex:none}
+.mapq{background:transparent;border-color:transparent;padding:5px 8px;font-size:14px;font-weight:600;color:var(--muted);flex:1;min-width:0}
+.mapq:hover{border-color:var(--line)}
+.mapq:focus{background:var(--bg);color:var(--ink)}
+.mapq::placeholder{color:var(--muted);opacity:1}
+.mapbtn{display:inline-flex;align-items:center;gap:5px;flex:none;padding:6px 12px;border-radius:999px;border:1.5px solid var(--line);color:var(--sea);font-size:14px;font-weight:700;text-decoration:none;background:var(--surface)}
+.mapbtn:hover{border-color:var(--sea)}
+.mapbtn svg{width:15px;height:15px}
 .stay{font-size:15px;font-weight:600;color:var(--ink);overflow-wrap:anywhere}
 .field{display:flex;flex-direction:column;gap:3px;min-width:0}
 .field .stamp{padding-left:12px}

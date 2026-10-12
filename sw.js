@@ -1,7 +1,7 @@
 // Service worker: keeps the app shell available offline.
 // Network first (always fresh when online), cached copy when offline.
 // Trip data itself is cached by Firestore's own offline storage.
-const CACHE = 'reisplan-v5';
+const CACHE = 'reisplan-v6';
 const SHELL = ['./', 'index.html', 'app.js', 'config.js', 'manifest.webmanifest',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
 
