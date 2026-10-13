@@ -154,6 +154,36 @@ dialog h2{font-size:24px;font-weight:800;margin-bottom:6px}
 dialog form{display:flex;flex-direction:column;gap:14px}
 dialog .row{display:flex;gap:10px;justify-content:flex-end}
 
+/* AI assistant */
+.ai-fab{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;display:inline-flex;align-items:center;gap:8px;border:0;border-radius:999px;padding:13px 18px;background:var(--sea);color:var(--sea-ink);font-weight:700;font-size:15px;cursor:pointer;box-shadow:0 6px 20px rgba(10,40,50,.25)}
+.ai-fab svg{width:18px;height:18px}
+.ai-panel{position:fixed;right:16px;bottom:16px;z-index:31;width:min(420px,calc(100vw - 32px));height:min(620px,calc(100dvh - 32px));background:var(--surface);border:1.5px solid var(--line);border-radius:18px;display:flex;flex-direction:column;box-shadow:0 12px 40px rgba(10,40,50,.25);overflow:hidden}
+.ai-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 16px;border-bottom:1.5px solid var(--line)}
+.ai-head h2{font-size:20px;font-weight:800}
+.ai-head .hint{font-size:12px}
+.ai-x{width:36px;height:36px;border-radius:10px;border:1.5px solid var(--line);background:transparent;cursor:pointer;font-size:20px;line-height:1;color:var(--muted)}
+.ai-log{flex:1;overflow-y:auto;padding:14px 14px 4px;display:flex;flex-direction:column;gap:10px}
+.msg{max-width:88%;padding:9px 13px;border-radius:14px;font-size:15px;line-height:1.45;overflow-wrap:anywhere}
+.msg p{margin:0 0 6px}.msg p:last-child{margin:0}
+.msg ul{margin:2px 0 6px;padding-left:18px}
+.msg.me{align-self:flex-end;background:var(--sea);color:var(--sea-ink);border-bottom-right-radius:4px}
+.msg.bot{align-self:flex-start;background:var(--bg);border-bottom-left-radius:4px}
+.msg.wait{color:var(--muted);font-style:italic}
+.msg.prop-wrap{background:transparent;padding:0;max-width:100%;width:100%}
+.prop{border:1.5px solid var(--sun);background:var(--sun-soft);border-radius:14px;padding:12px 14px;font-size:14px}
+.prop-head{font-weight:700;margin-bottom:6px}
+.prop ul{margin:0 0 8px;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+.prop li.danger{color:var(--vote)}
+.prop li.bad{color:var(--muted);font-style:italic}
+.prop-actions{display:flex;gap:8px}
+.prop-actions .btn{padding:8px 14px;font-size:14px}
+.prop-state{font-size:13px;font-weight:700;color:var(--muted)}
+.prop-state:empty{display:none}
+.ai-suggest{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px}
+.ai-suggest button{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 11px;font-size:13px;font-weight:600;color:var(--sea);cursor:pointer;text-align:left}
+.ai-form{display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));border-top:1.5px solid var(--line)}
+.ai-form input{flex:1}
+@media (max-width:560px){.ai-panel{right:0;bottom:0;width:100vw;height:85dvh;border-radius:18px 18px 0 0;border-bottom:0}}
 @media (max-width:860px){.cols{grid-template-columns:minmax(0,1fr)}.setup{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){
   .wrap{padding:16px 12px 64px}
@@ -238,6 +268,27 @@ dialog .row{display:flex;gap:10px;justify-content:flex-end}
 </div>
 
 <div class="netpill" id="netpill" hidden></div>
+<button class="ai-fab" id="aiFab" type="button" hidden aria-controls="aiPanel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8zM19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9z" fill="currentColor"/></svg>Vraag de reisassistent</button>
+<section class="ai-panel" id="aiPanel" hidden aria-labelledby="aiH">
+  <div class="ai-head">
+    <div><h2 id="aiH">Reisassistent</h2><div class="hint">Kent het hele plan · wijzigt pas na jouw OK</div></div>
+    <button class="ai-x" id="aiClose" type="button" aria-label="Sluiten">×</button>
+  </div>
+  <div class="ai-log" id="aiLog" aria-live="polite">
+    <div class="msg bot"><p>Hoi! Vraag me iets over de reis, of laat me iets in het plan zetten.</p></div>
+  </div>
+  <div class="ai-suggest" id="aiSuggest">
+    <button type="button">Wat doen we morgen?</button>
+    <button type="button">Hoe komen we donderdag naar Macau?</button>
+    <button type="button">Iets leuks bij regen in Kowloon?</button>
+    <button type="button">Zet woensdag om 19:00 'diner met familie' erin</button>
+  </div>
+  <form class="ai-form" id="aiForm">
+    <input id="aiInput" maxlength="500" autocomplete="off" placeholder="Stel een vraag…" aria-label="Vraag aan de reisassistent">
+    <button class="btn" type="submit" id="aiSend">Stuur</button>
+  </form>
+</section>
+
 
 <dialog id="nameDlg" aria-labelledby="nameH">
   <form id="nameForm" method="dialog">
