@@ -295,12 +295,13 @@ dialog .row{display:flex;gap:10px;justify-content:flex-end}
 
 
 <dialog id="nameDlg" aria-labelledby="nameH">
-  <form id="nameForm" method="dialog">
+  <form id="nameForm" method="dialog" autocomplete="off" data-1p-ignore data-lpignore="true">
     <div>
       <h2 id="nameH">Wie ben jij?</h2>
       <p class="hint" style="margin:0">Je naam komt naast alles wat je wijzigt, zodat iedereen ziet wie wat heeft aangepast. Je hoeft dit maar één keer in te vullen op dit apparaat.</p>
     </div>
-    <label for="nameInput">Je naam<input id="nameInput" maxlength="30" autocomplete="given-name" placeholder="Bijvoorbeeld Michelle" required></label>
+    <label for="nameInput">Je naam<input id="nameInput" name="reisplan-nickname" type="text" maxlength="30" autocomplete="off" autocapitalize="words" spellcheck="false" data-1p-ignore data-lpignore="true" data-bwignore data-form-type="other" placeholder="Bijvoorbeeld Michelle" required></label>
+    <span class="hint" id="nameErr" style="color:var(--vote)" hidden>Gebruik alleen je voornaam (letters, eventueel een spatie of streepje).</span>
     <div class="row">
       <button class="btn ghost" type="button" id="nameCancel">Later</button>
       <button class="btn" type="submit">Opslaan</button>
